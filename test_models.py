@@ -1,5 +1,5 @@
-from models import *
 import pytest
+from models import *
 
 
 def test_character_name():
@@ -8,14 +8,14 @@ def test_character_name():
 
 
 def test_inherits_name():
-    alien_bob = Alien('bob', 'Betelgeuse')
-    assert alien_bob.first_name == 'bob'
-    assert alien_bob.planet == 'Betelgeuse'
+    alien_bob = Alien()
+    assert alien_bob.first_name == 'Xzlty'
+    assert alien_bob.planet == 'Earth'
 
 
 @pytest.mark.parametrize("character, outcome", [
     (Alien(), "The alien aggressively reads poetry at bob!"),
-    (Wizard(), "The wizard drops a heavy book on bob's foot!"),
+    (Wizard('Dumbledore'), "The wizard drops a heavy book on bob's foot!"),
     (Coder(), "The coder tells bob a dad joke. It's super effective!"),
     (Healer(), "The healer makes bob feel bad for not going to the doctor more frequently")
 ])
@@ -53,6 +53,8 @@ class TestCoder:
         :return:
         :rtype:
         """
+        for member in party_list:
+            party_list.append(member)
         assert False
 
     def test_coder_cannot_clone_coder(self):
