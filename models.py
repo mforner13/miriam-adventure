@@ -11,6 +11,9 @@ class Character(object):
     def special(self, target=None):
         pass
 
+class Party(object):
+    def __init__(self, members: List[Character]):  #typehint
+        self.party_members = members
 
 class Alien(Character):
     def __init__(self, name='Xzlty', planet='Earth'):
@@ -20,14 +23,9 @@ class Alien(Character):
     def attack(self, target):
         return "The alien aggressively reads poetry at {}!".format(target.first_name)
 
-    def special(self, target):
-        if Alien('Alan') in target:
-            return target.remove(Alien('Alan'))
-        else:
-            pass
-
-    def test_print(self):
-        print('Works')
+    def special(self, target:Party=None):
+        if self in target.party_members:
+            target.party_members.remove(self)
 
 
 class Wizard(Character):
@@ -37,6 +35,10 @@ class Wizard(Character):
     def attack(self, target):
         return "The wizard drops a heavy book on {}'s foot!".format(target.first_name)
 
+    def special(self, target=None):
+        Party.party_members.append(target)  #But which instance of party - needs to corelate with the one from character
+                                            #Why reference to part_members unresolved?
+
 
 class Coder(Character):
     def __init__(self, name='Norman'):
@@ -45,7 +47,14 @@ class Coder(Character):
     def attack(self, target):
         return "The coder tells {} a dad joke. It's super effective!".format(target.first_name)
 
+    def special(self, target:Party=None):
+        if isinstance(target.party_members[0], Coder):
+            # isinstance function takes two arguments, the thing you want to test and the object to test against
+            pass
+        else:
+            return target.party_members.append(target.party_members[0][::-1].capitalize())
 
+Coder.special(Party([Alien("Miriam"), Wizard("John")]))  # why doesn't this work?
 
 class Healer(Character):
     def __init__(self, name='Doctor'):
@@ -55,50 +64,14 @@ class Healer(Character):
         return "The healer makes {} feel bad for not going to the doctor more frequently".format(target.first_name)
 
 
-class Party(object):
-    def __init__(self, members: List[Character]):  #typehint
-        self.party_members = members
+class Trickster(Character):
+    def __init__(self, name):
+        super().__init__(name)
 
-test_alien = Alien()
+    def special(self, target:Party = None):
+        target.party_members[0] = Trickster(target.party_members[0].first_name)
 
-test_alien.test_print()
-
-alien_testing = Alien()
-
-alien_testing.special(Party([Character(), Alien('Alan')]).party_members)
-
-
-party_list = ['Miriam', 'Forner', 'Jane', 'Tom']
-
-#new_list = list(party_list)
-
-
-def coder_special(og_list):
-
-    new_list = list(og_list)
-
-    for name in new_list:
-        return name[1:]+name[0]  # I'm just returning it not storing it in a list
-
-    og_list.extend(new_list)
-
-    print(og_list)
-
-
-coder_special(['Miriam', 'Forner', 'Jane', 'Tom'])
-
-
-"""for name in new_list:
-    for letter in name:
-        name_list = list(name)
-        print(name_list.append(name_list[0]))
-        
-
-
-
-
-print(party_list)"""
-
+Trickster.special(Party([Alien("Miriam"), Wizard("Edward")]))  #Expects type trickster - but I told it to expect Party?
 
 
 

@@ -1,4 +1,3 @@
-import pytest
 from models import *
 
 
@@ -29,9 +28,15 @@ class TestAlien:
         alan_the_alien = Alien('Alan')
         bob = Character()
         party = Party([bob, alan_the_alien])
-        alan_the_alien.special()
+        alan_the_alien.special(party)
         assert party.party_members == [bob]
 
+    def test_alien_only_removes_themselves(self):
+        miriam_alien = Alien('Miriam')
+        alan_alien = Alien('alan')
+        new_party = Party([miriam_alien, alan_alien])
+        alan_alien.special(new_party)
+        assert new_party.party_members == [miriam_alien]
 
 class TestWizard:
     def test_wizard_special_adds_member_to_party(self):
@@ -48,18 +53,28 @@ class TestCoder:
     reverse of their originator - for example, 'Lucy' would become 'Ycul'. Coders cannot clone Coders!
     """
     def test_coder_special_clones_party_member(self):
-        """
-        This test needs to be written!
-        :return:
-        :rtype:
-        """
-        for member in party_list:
-            party_list.append(member)
-        assert False
+        anya_the_coder = Coder("Anya")
+        alan_the_alien = Alien("Alan")
+        jon_the_wizard = Wizard("Jon")
+        party = Party([alan_the_alien, jon_the_wizard])
+        anya_the_coder.special(party)
+        assert party.party_members == [alan_the_alien, jon_the_wizard, "Nala"] # Could I say alan_the_alien[::-1] ?
+
 
     def test_coder_cannot_clone_coder(self):
         anish_the_coder = Coder('Anish')
         antonia_the_coder = Coder('Antonia')
         party = Party([anish_the_coder, antonia_the_coder])
-        anish_the_coder.special(antonia_the_coder)
+        anish_the_coder.special(party)
         assert len(party.party_members) == 2
+
+class TestTrickster:
+
+        def test_trickster_changes_subclass_to_trickster(self):
+            miriam_the_alien = Alien("Miriam")
+            tom_the_coder = Coder("Tom")
+            jane_the_trickster = Trickster("Jane")
+            miriam_the_trickster = Trickster("Miriam")  #After I've changed the subclass should look like this
+            party = Party([miriam_the_alien, tom_the_coder, ed_the_wizard])
+            jane_the_trickster.special(party)
+            assert party.party_members == [miriam_the_trickster, tom_the_coder]
