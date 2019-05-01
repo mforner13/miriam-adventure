@@ -1,4 +1,5 @@
 from models import *
+import pytest
 
 
 def test_character_name():
@@ -45,6 +46,7 @@ class TestWizard:
         alan_the_alien = Alien('Alan')
         anya_the_wizard.special(alan_the_alien)
         assert party.party_members == [anya_the_wizard, alan_the_alien]
+        assert alan_the_alien.party == anya_the_wizard.party
 
 
 class TestCoder:
@@ -57,15 +59,15 @@ class TestCoder:
         alan_the_alien = Alien("Alan")
         jon_the_wizard = Wizard("Jon")
         party = Party([alan_the_alien, jon_the_wizard])
-        anya_the_coder.special(party)
-        assert party.party_members == [alan_the_alien, jon_the_wizard, "Nala"] # Could I say alan_the_alien[::-1] ?
+        anya_the_coder.special(alan_the_alien)
+        assert party.party_members[2].first_name == "Nala"
 
 
     def test_coder_cannot_clone_coder(self):
         anish_the_coder = Coder('Anish')
         antonia_the_coder = Coder('Antonia')
         party = Party([anish_the_coder, antonia_the_coder])
-        anish_the_coder.special(party)
+        anish_the_coder.special(antonia_the_coder)
         assert len(party.party_members) == 2
 
 class TestTrickster:
@@ -75,6 +77,15 @@ class TestTrickster:
             tom_the_coder = Coder("Tom")
             jane_the_trickster = Trickster("Jane")
             miriam_the_trickster = Trickster("Miriam")  #After I've changed the subclass should look like this
-            party = Party([miriam_the_alien, tom_the_coder, ed_the_wizard])
-            jane_the_trickster.special(party)
-            assert party.party_members == [miriam_the_trickster, tom_the_coder]
+            party = Party([miriam_the_alien, tom_the_coder])
+            jane_the_trickster.special(miriam_the_alien)
+            assert isinstance(party.party_members[0], Trickster)
+
+class TestParty:
+
+        def test_membership_of_right_party(self):
+            miriam_the_alien = Alien("Miriam")
+            tom_the_coder = Coder("Tom")
+            jane_the_trickster = Trickster("Jane")
+            party = Party([miriam_the_alien, tom_the_coder, jane_the_trickster])
+            assert miriam_the_alien.party == party

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="58f4a387-ddc0-4e97-8f48-71d2f7a3c87f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_models.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="447">
+              <caret line="86" selection-start-line="86" selection-end-line="86" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test_models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../helloworld.py" />
+        <option value="$PROJECT_DIR$/test_models.py" />
+        <option value="$PROJECT_DIR$/models.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="788" />
+    <option name="width" value="585" />
+    <option name="height" value="775" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="miriam-adventure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miriam-adventure" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../coding/microblog" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python tests.all tests">
+    <configuration name="all tests" type="tests" factoryName="py.test" temporary="true">
+      <module name="miriam-adventure" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_models&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_models.TestCoder" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="miriam-adventure" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_models.TestCoder&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_models.TestCoder.test_coder_special_clones_party_member" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="miriam-adventure" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_models.TestCoder.test_coder_special_clones_party_member&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_models.TestTrickster.test_trickster_changes_subclass_to_trickster" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="miriam-adventure" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_models.TestTrickster.test_trickster_changes_subclass_to_trickster&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_models.TestWizard.test_wizard_special_adds_member_to_party" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="miriam-adventure" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_models.TestWizard.test_wizard_special_adds_member_to_party&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python tests.pytest for test_models.TestCoder" />
+      <item itemvalue="Python tests.all tests" />
+      <item itemvalue="Python tests.pytest for test_models.TestCoder.test_coder_special_clones_party_member" />
+      <item itemvalue="Python tests.pytest for test_models.TestWizard.test_wizard_special_adds_member_to_party" />
+      <item itemvalue="Python tests.pytest for test_models.TestTrickster.test_trickster_changes_subclass_to_trickster" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.all tests" />
+        <item itemvalue="Python tests.pytest for test_models.TestTrickster.test_trickster_changes_subclass_to_trickster" />
+        <item itemvalue="Python tests.pytest for test_models.TestCoder.test_coder_special_clones_party_member" />
+        <item itemvalue="Python tests.pytest for test_models.TestCoder" />
+        <item itemvalue="Python tests.pytest for test_models.TestWizard.test_wizard_special_adds_member_to_party" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="58f4a387-ddc0-4e97-8f48-71d2f7a3c87f" name="Default Changelist" comment="" />
+      <created>1554575973279</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554575973279</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="pytest_for_test_models_TestTrickster_test_trickster_changes_subclass_to_trickster - 2019.04.30 at 17h 39m 57s.xml">
+      <configuration name="pytest for test_models.TestTrickster.test_trickster_changes_subclass_to_trickster" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_models_TestTrickster_test_trickster_changes_subclass_to_trickster - 2019.05.01 at 19h 05m 26s.xml">
+      <configuration name="pytest for test_models.TestTrickster.test_trickster_changes_subclass_to_trickster" configurationId="tests" />
+    </history-entry>
+    <history-entry file="all_tests - 2019.05.01 at 19h 05m 26s.xml">
+      <configuration name="all tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="all_tests - 2019.05.01 at 19h 07m 47s.xml">
+      <configuration name="all tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_models_TestTrickster_test_trickster_changes_subclass_to_trickster - 2019.05.01 at 19h 13m 30s.xml">
+      <configuration name="pytest for test_models.TestTrickster.test_trickster_changes_subclass_to_trickster" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_models_TestTrickster_test_trickster_changes_subclass_to_trickster - 2019.05.01 at 19h 13m 37s.xml">
+      <configuration name="pytest for test_models.TestTrickster.test_trickster_changes_subclass_to_trickster" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_models_TestTrickster_test_trickster_changes_subclass_to_trickster - 2019.05.01 at 19h 15m 57s.xml">
+      <configuration name="pytest for test_models.TestTrickster.test_trickster_changes_subclass_to_trickster" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_models_TestTrickster_test_trickster_changes_subclass_to_trickster - 2019.05.01 at 19h 17m 42s.xml">
+      <configuration name="pytest for test_models.TestTrickster.test_trickster_changes_subclass_to_trickster" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_models_TestTrickster_test_trickster_changes_subclass_to_trickster - 2019.05.01 at 19h 18m 02s.xml">
+      <configuration name="pytest for test_models.TestTrickster.test_trickster_changes_subclass_to_trickster" configurationId="tests" />
+    </history-entry>
+    <history-entry file="all_tests - 2019.05.01 at 19h 18m 12s.xml">
+      <configuration name="all tests" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49925596" visible="true" weight="0.5360983" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50074404" side_tool="true" weight="0.32872504" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../helloworld.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="727" column="32" selection-start-line="727" selection-start-column="32" selection-end-line="727" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
