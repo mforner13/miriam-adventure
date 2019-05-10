@@ -76,7 +76,6 @@ class TestTrickster:
             miriam_the_alien = Alien("Miriam")
             tom_the_coder = Coder("Tom")
             jane_the_trickster = Trickster("Jane")
-            miriam_the_trickster = Trickster("Miriam")  #After I've changed the subclass should look like this
             party = Party([miriam_the_alien, tom_the_coder])
             jane_the_trickster.special(miriam_the_alien)
             assert isinstance(party.party_members[0], Trickster)
